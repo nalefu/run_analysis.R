@@ -11,4 +11,5 @@ The code attached cleans up the data pertaining to the following variables: tBod
 #Transformations
 * Creates one dataset from by merging the test and training data sets
 * Reads features.txt and extracts the means and standard deviations
-* 
+* Set descriptive column headings
+* Creates additional data set with the averages for subjects and activities, saved in "tidy_data.txt"
