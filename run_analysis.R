@@ -23,7 +23,7 @@ dat <- cbind(subjects, labels, dat)
 std_prep <- grep("-mean|-std", colnames(dat))
 std_mean_dat <- dat[,c(1,2,std_prep)]
 melts  = melt(std_mean_dat, id.var = c("subjects", "labels"))
-averages = dcast(melts, subjects + labels ~ variable, mean)
-write.table(averages, file="./data/tidy_data.txt", row.name=FALSE)
+averagesnSDs = dcast(melts, subjects + labels ~ variable, mean)
+write.table(averagesnSDs, file="./data/tidy_data.txt", row.name=FALSE)
 
-averages
+averagesnSDs
